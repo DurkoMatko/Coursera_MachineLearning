@@ -84,6 +84,11 @@ fprintf('%f\n', theta);
 fprintf('Expected theta values (approx)\n');
 fprintf(' -3.6303\n  1.1664\n\n');
 
+
+fprintf('Will Run Normal Equation  now ...\n')
+pause;
+thetaByNormalEquation = pinv(X'*X)*X'*y
+
 % Plot the linear fit
 hold on; % keep previous plot visible
 plot(X(:,2), X*theta, '-')
